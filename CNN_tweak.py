@@ -68,7 +68,7 @@ print("***********")
 print(best_neuron)
 model = baseline_model(best_neuron)
 buildModel()
-model.save('mnist_model_update.h5')
+model.save('/root/MLOPS/mnist_model_update.h5')
 print("Model Saved")
 
 file1 = open("result.txt","w")
