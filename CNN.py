@@ -32,7 +32,7 @@ model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=5, batch_si
 scores = model.evaluate(X_test, y_test, verbose=0)
 print("Accuracy:  %.2f%%" % (scores[1]*100))
 
-model.save("model/mnist_model.h5")
+model.save("/root/MLOPS/mnist_model.h5")
 
 file1 = open("result.txt","w")
 file1.write(str(scores[1]*100))
